@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClassWork_02_2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="300" Width="400">
     <Grid>
-        
+        <StackPanel Orientation="Vertical">
+            <Button Content="Start Thread type 1" Click="StartThread1" Margin="5" Padding="5"/>
+            <Button Content="Start Thread type 2" Click="StartThread2" Margin="5" Padding="5"/>
+            <CheckBox x:Name="chbIsBckgrd" Content="Is background Thread" HorizontalAlignment="Center"/>
+            <Button Content="Close" Click="Click_Close" Margin="5" Padding="5"/>
+        </StackPanel>
     </Grid>
 </Window>
